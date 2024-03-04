@@ -21,7 +21,7 @@ steps:
   inputs:
     ConnectionType: 'PublishProfile'
     PublishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml'
-    PublishProfilePassword: '44FedqWcXRNeVf'
+    PublishProfilePassword: ''
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
