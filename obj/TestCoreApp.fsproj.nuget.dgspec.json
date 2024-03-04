@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TaleoPOC\\TestOffice\\TestApi\\TestCoreApp\\TestCoreApp.fsproj": {}
+  },
+  "projects": {
+    "C:\\TaleoPOC\\TestOffice\\TestApi\\TestCoreApp\\TestCoreApp.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TaleoPOC\\TestOffice\\TestApi\\TestCoreApp\\TestCoreApp.fsproj",
+        "projectName": "TestCoreApp",
+        "projectPath": "C:\\TaleoPOC\\TestOffice\\TestApi\\TestCoreApp\\TestCoreApp.fsproj",
+        "packagesPath": "C:\\Users\\sesa472321\\.nuget\\packages\\",
+        "outputPath": "C:\\TaleoPOC\\TestOffice\\TestApi\\TestCoreApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sesa472321\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.27, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.127\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
