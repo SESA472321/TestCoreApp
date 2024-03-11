@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - main
+env:
+  AZURE_WEBAPP_NAME: mytimeservice
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -24,7 +27,14 @@ jobs:
 
 
       - name: Publish
-        run: dotnet publish ./TestCoreApp.fsproj --configuration Release --no-build 
+        run: dotnet publish ./TestCoreApp.fsproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+
+      - name: Deployement
+        uses: actions/webapps-deploye@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_PROFILE }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
 
     
