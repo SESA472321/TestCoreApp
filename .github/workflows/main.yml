@@ -24,7 +24,7 @@ jobs:
 
 
       - name: Publish
-        run: dotnet publish./TestCoreApp.fsproj --configuration Release --no-build 
+        run: dotnet publish ./TestCoreApp.fsproj --configuration Release --no-build 
 
 
     
