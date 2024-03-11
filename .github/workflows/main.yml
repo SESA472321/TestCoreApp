@@ -7,23 +7,24 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
+    
+    steps:
+      - uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '6.0.x'	
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'	
 
-    - name: Restore
-      run: dotnet restore .//sln
+      - name: Restore
+        run: dotnet restore ./TestCoreApp.fsproj
 
-    - name: Build
-      run: dotnet build ./ --configuration Release --no-restore
+      - name: Build
+        run: dotnet build ./TestCoreApp.fsproj --configuration Release --no-restore
 
 
-    - name: Publish
-      run: dotnet publish./ --configuration Release --no-build 
+      - name: Publish
+        run: dotnet publish./TestCoreApp.fsproj --configuration Release --no-build 
 
 
     
